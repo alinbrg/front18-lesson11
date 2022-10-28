@@ -1,0 +1,64 @@
+/* 1200 პატარა ლეპტოპი */
+/* 1024 ტაბლეტი */
+/* 768 მცირე ზომის ტაბლეტი */
+/* 480 > მობილური */
+
+@media (min-width: 1024px) {
+	/* 1024-ს ზემოთ რა დიზაინი ჩაიტვირთოს */
+}
+
+@media (max-width: 1024px) {
+	/* 1024-ს დაბლა რა დიზაინი ჩაიტვირთოს */
+
+	.grid-section {
+		background-image: url(../images/post-3.jpg);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	.grid-parent {
+		grid-template-columns: 1fr 1fr;
+	}
+	.item {
+		background-color: darkblue;
+		color: white;
+		border-radius: 20px;
+	}
+
+	.about {
+		background-color: blueviolet;
+	}
+	.wrapper {
+		flex-direction: column-reverse;
+	}
+	.wrapper img {
+		width: 100%;
+		margin-right: 0;
+		margin-top: 50px;
+	}
+	.wrapper p {
+		font-weight: 800;
+		font-size: 24px;
+		text-transform: uppercase;
+	}
+}
+
+@media (max-width: 768px) {
+	/* 768-ს დაბლა რა დიზაინი ჩაიტვირთოს */
+	.grid-section {
+		background-image: initial;
+	}
+	.grid-parent {
+		grid-template-columns: 1fr;
+		grid-gap: 20px;
+	}
+	.item {
+		background-color: darkgreen;
+	}
+	.item-1 {
+		display: none;
+	}
+	.item-3 {
+		height: 300px;
+	}
+}
